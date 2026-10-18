@@ -3,7 +3,7 @@
   "appName": "TRi9i",
   "webDir": "www",
   "server": {
-    "url": "https://tri9imaroc-ui.github.io/tri9i/",
+   "url": "https://tri9maroc-ui.github.io/tri9i/"
     "cleartext": false
   }
 }
