@@ -20,6 +20,21 @@ jobs:
             [ -f assets/$f ] || cp $f assets/$f
           done
 
+      - name: Write Capacitor config
+        run: |
+          cat > capacitor.config.json <<'EOF'
+          {
+            "appId": "ma.tri9i.app",
+            "appName": "TRi9i",
+            "webDir": "www",
+            "server": {
+              "url": "https://tri9maroc-ui.github.io/tri9i/",
+              "cleartext": false
+            }
+          }
+          EOF
+          cat capacitor.config.json
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
